@@ -1,0 +1,31 @@
+{
+  "name": "blogify-api",
+  "version": "1.0.0",
+  "description": "Blogify API with ES modules",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest",
+    "test:coverage": "NODE_OPTIONS=--experimental-vm-modules jest --coverage"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.12",
+    "zod": "^3.11.6"
+  },
+  "devDependencies": {
+    "jest": "^27.3.1",
+    "supertest": "^6.1.6",
+    "mongodb-memory-server": "^8.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "transform": {},
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  }
+}
